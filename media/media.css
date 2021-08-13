@@ -1,0 +1,209 @@
+@media (max-width: 992px){
+	.c-hamburder{
+		display: block;
+		position: absolute;
+		right: 0;
+      top: 0;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      background: #4c5a65
+      border: none;
+      z-index: 9999;
+      box-shadow: none;
+      margin-top: 10px;
+      font-size: 0;
+}
+	.c-hamburder:focus{
+	   background: #4c5a65
+	   border-radius: 3px;
+	   outline: none;
+}
+	.c-hamburder span {
+		display: block;
+		position: absolute;
+		top: 20px;
+		left: 5px;
+		right: 5px;
+		height: 5px;
+		border-radius: 20px;
+		background: #fff;	
+}
+	.c-hamburder span::before,.c-hamburder span::after {
+		position: absolute;
+		display: block;
+		left: 0;
+		width: 100%;
+		height: 5px;
+		border-radius: 20px;
+		background: #fff;
+		content: "";
+	}
+	.c-hamburder span::before {
+		top: -15px;
+}
+	.c-hamburder-line span::after {
+		bottom: -15px;
+}
+	.c-hamburder-line span {
+        -webkit-transition: background
+        -moz-transition: background
+        -ms-transition: background
+        -o-transition: background
+        transition: background 0s 0.3s    
+}
+	.c-hamburder-line span::before,.c-hamburder-line span::after{
+		transition-duration: 0.3s,0.3s;
+		transition-delay: 0.3s,0s;
+}
+	.c-hamburder-line span::before{
+		transition-property: top,transform;
+}
+	.c-hamburder-line span::after{
+		transition-property: bottom,transform;
+}
+	.c-hamburder-line.is-active {
+}
+	.c-hamburder-line.is-active span {
+		background: none;
+}
+	.c-hamburder-line.is-active span::before{
+		top: 0;
+		transform: rotate(-45deg);
+}
+	.c-hamburder-line.is-active span::after{
+		bottom: 0;
+		transform: rotate(45deg);
+}
+	.c-hamburder-line.is-active span::before,.c-hamburder-line.is-active span::after{
+		transition-delay: 0s,0,3s;
+}
+	.header__center-text{
+	   display: flex;
+	   flex-direction: column;
+      font-size: 20px;
+      line-height: 35px;
+      align-items: flex-start;
+      margin-top: 100px;
+      margin-left: 100px;
+      font-family: Montserrat;
+	   transition: all ease 1s;
+	   width: 30px;
+	   height: 20px;
+}
+	
+	.header__menu{
+	   display:flex;
+	   flex-direction:column;
+      margin-left: 0;
+      margin-top: 100px;
+}
+	#menu {
+      display: flex;
+      text-align: left;
+		width: 300px;
+		margin-left: -240px;
+		background: rgba(182, 86, 103, 0);
+		position: fixed;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		transition: all ease 1s;
+		overflow: auto;	
+		z-index: 7;
+}
+	#menu.nav-active{
+      display: flex;
+		margin-left: 0;
+		background #4c5a65
+}
+.header-top__logo {
+	margin-left 70%
+}
+.header-bottom__text {
+	margin-top -10px
+}
+.services {
+	flex-wrap: wrap
+	margin: auto
+	max-width 300px
+	margin-top 20px
+}
+.services__interfaces {
+	margin-top 20px
+}
+.blog__our-blog {
+	flex-wrap: wrap
+	justify-content center
+}
+.slider-selected {
+	display none
+}
+@media (max-width: 750px) {
+	.header-top__logo {
+	margin-left 60%
+}
+	.header-bottom {
+		display flex
+		flex-wrap: wrap
+}
+.button slider-next {
+	cursor: pointer;
+}
+}
+@media (max-width: 525px) {
+	.header-bottom__image {
+		transform: scale(.8)
+		margin-top -50px
+}
+	.header-top__logo {
+	margin-left 40%
+}
+#tt-01 {
+	margin-bottom 0
+	font-size 30px
+}
+.text__text {
+	margin-top -20px
+}
+.text__btn {
+	margin-top -30px
+}
+.btn__icons {
+	display none
+}
+.header-bottom {
+	transform: scale(.9)
+	margin-top -30px
+}
+.logo__block{
+	transform: scale(.6)
+}
+.logo {
+	height 50px
+}
+#tt-02,#tt-03,#tt-04,#tt-05 {
+	font-size 13px
+	line-height 26px
+}
+.header {
+	height 650px
+}
+.blog__text {
+	height 130px
+	margin-left -30px
+}
+.our-blog__top {
+	margin-top -15px}
+}
+.wrap-slider {
+	max-width: 100%
+}
+.slider {
+	max-width: 90%
+}
+}
